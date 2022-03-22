@@ -115,6 +115,7 @@ export class addPromo extends Component {
                   type="text"
                   class="form-select"
                   name="discount"
+                  placeholder="Input Discount"
                   // aria-label="Default select example"
                 />
               </div>
@@ -137,7 +138,12 @@ export class addPromo extends Component {
 
               <div className="input-stock ">
                 <p className="title">Input Coupon Code :</p>
-                <input class="form-select start" type="text" name="coupon" />
+                <input
+                  class="form-select start"
+                  type="text"
+                  name="coupon"
+                  placeholder="Input Coupon Code"
+                />
               </div>
             </div>
             <div className="form-right">

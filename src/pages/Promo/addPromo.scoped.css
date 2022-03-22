@@ -121,6 +121,11 @@ button:hover {
   color: rgba(106, 64, 41, 1);
 }
 
+input::placeholder {
+  color: #9f9f9f;
+  font-family: Poppins;
+}
+
 .expire-date {
   position: absolute;
   top: 60%;
