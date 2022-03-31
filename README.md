@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Violet Coffee Shop - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+	<img height="200" src="https://raw.githubusercontent.com/anshoriacc/violet-coffee-shop-backend/master/public/github-banner.png" alt="VioletCoffeeShop">
 
-## Available Scripts
+[![react-router-dom](https://img.shields.io/npm/v/react-router-dom?label=react-router-dom)](https://www.npmjs.com/package/react-router-dom)
+[![axios](https://img.shields.io/npm/v/axios?label=axios)](https://www.npmjs.com/package/axios)
+[![chart.js](https://img.shields.io/npm/v/chart.js?label=chart.js)](https://www.npmjs.com/package/chart.js)
+[![craco](https://img.shields.io/npm/v/craco?label=craco)](https://www.npmjs.com/package/craco)
+[![lottie-react](https://img.shields.io/npm/v/lottie-react?label=lottie-react)](https://www.npmjs.com/package/lottie-react)
+[![moment](https://img.shields.io/npm/v/moment?label=moment)](https://www.npmjs.com/package/moment)
+[![redux](https://img.shields.io/npm/v/redux?label=redux)](https://www.npmjs.com/package/redux)
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
+Violet coffee shop is a web application that can make it easier for customer to order food and beverages from coffee shop. Customer can simply register, login, see products, order, see order history, edit their profile, etc.
+
+## Contents
+
+- [Features](#features)
+- [Run Application](#how-to-run-the-application)
+- [Deployment](#deployment)
+- [Screenshots](#screenshots)
+- [Related Projects](#related-projects)
+- [Contributors](#contributors)
+
+## Features
+
+### Public
+
+- Login
+- Register
+- Forgot Password
+- Search product
+- Product's detail
+- Edit profile
+
+### Customer:
+
+- Order
+- Order history
+
+### Admin:
+
+- Add product
+- Edit product
+- Add promo
+- Edit promo
+- Dashboard Admin
+
+## How to Run the Application
+
+### 1. Clone this repository
+
+Clone this repository by run the following code:
+
+```
+$ git clone <this-repo-url>
+```
+
+### 2. Install dependency packages
+
+Install dependency packages by run the following code inside project folder:
+
+```
+$ npm install
+```
+
+### 3. Configure .env file
+
+Configure .env file by create file named .env inside project folder and add this line to the file:
+
+```
+REACT_APP_HOST = "https://coffee-shop-back-end.herokuapp.com/api"
+```
+
+### 4. Run projects
+
+Run this projects by run the following code:
+
+```
+$ npm start
+```
+
+It runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Netlify deploy link](https://violet-coffee-shop.netlify.app)
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center">
+<img width="500" src="https://raw.githubusercontent.com/anshoriacc/violet-coffee-shop-frontend/master/public/github-ss1.png" alt="Home page">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="500" src="https://raw.githubusercontent.com/anshoriacc/violet-coffee-shop-frontend/master/public/github-ss2.png" alt="Login page">
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Related Projects
 
-### `npm run eject`
+[Violet Coffee Shop - Backend](https://github.com/anshoriacc/violet-coffee-shop-backend)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project created with ReactJS by [Achmad Anshori](https://github.com/anshoriacc), [Fahrul Muhammad](https://github.com/fahrul-muhammad), [Tri Sumanzaya](https://github.com/Trisumanzaya93), [Fajar Pratama Vhishinggah](https://github.com/ikehikeh151), [Hazpi Nurafgan](https://github.com/Hazgn).

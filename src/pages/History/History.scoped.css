@@ -82,9 +82,9 @@ a {
 
 .card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 90%;
-  gap: 1rem;
+  gap: 2rem;
   margin: auto;
   flex-wrap: wrap;
 }

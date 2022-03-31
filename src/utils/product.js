@@ -19,6 +19,13 @@ export const getProduct = (category) => {
   return axios.get(URL);
 };
 
+export const searchProduct = (search) => {
+  const URL = `${
+    process.env.REACT_APP_HOST
+  }/product?search=${search}&per_page=15&page=1`;
+  return axios.get(URL);
+};
+
 export const detailProduct = (id) => {
   const URL = `${process.env.REACT_APP_HOST}/product/${id}`;
   return axios.get(URL);

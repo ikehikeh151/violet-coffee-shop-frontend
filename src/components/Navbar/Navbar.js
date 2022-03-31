@@ -1,23 +1,23 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import "./Navbar.scoped.css";
-import logo from "../../assets/icons/logo.png";
-import chat from "../../assets/icons/chat (1) 1.png";
-import Default from "../../assets/images/dummy-profile.png";
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+import './Navbar.scoped.css';
+import logo from '../../assets/icons/logo.png';
+import chat from '../../assets/icons/chat (1) 1.png';
+import Default from '../../assets/images/dummy-profile.png';
 
 export class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLogin: false
+      isLogin: false,
     };
   }
   componentDidMount() {
     // console.log("COMPONENT DID MOUNT");
     if (this.props.auth.token) {
       this.setState({
-        isLogin: true
+        isLogin: true,
       });
     }
   }
@@ -49,7 +49,8 @@ export class Navbar extends Component {
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -71,7 +72,7 @@ export class Navbar extends Component {
               </li>
               <li className="nav-item">
                 {isLogin ? (
-                  this.props.user.role === "user" ? (
+                  this.props.user.role === 'user' ? (
                     <Link className="nav-link" to="/history">
                       History
                     </Link>
@@ -91,9 +92,10 @@ export class Navbar extends Component {
               <div className="d-flex">
                 <button
                   onClick={() => {
-                    this.props.history.push("/login");
+                    this.props.history.push('/login');
                   }}
-                  className="btn-login">
+                  className="btn-login"
+                >
                   Login
                 </button>
 
@@ -103,9 +105,19 @@ export class Navbar extends Component {
               </div>
             ) : (
               <div className="info">
-                <div className="search">
-                  <input type="text" placeholder="Search" />
-                </div>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    console.log(e.target.q.value);
+                    this.props.history.push(
+                      `/product/search?q=${e.target.q.value}`
+                    );
+                  }}
+                >
+                  <div className="search">
+                    <input name="q" type="text" placeholder="Search" />
+                  </div>
+                </form>
                 <div className="chat">
                   <Link to="/chat">
                     <div className="notif">1</div>
@@ -131,7 +143,7 @@ export class Navbar extends Component {
 const mapStateToProps = (state) => {
   return {
     auth: state.auth,
-    user: state.auth.userData
+    user: state.auth.userData,
   };
 };
 
